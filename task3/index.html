@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task3</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<script>
+		//3.	Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
+
+		const minV = 1
+		const maxV = 5
+
+		let someRandomeNumber = minV + Math.floor(Math.random() * (maxV - minV + 1))
+
+		const someUserNumber = parseInt(prompt(`Введіть число від 1 до 5 та спробуйте вгадати загадане комп'ютером число`))
+
+		if (someUserNumber === someRandomeNumber)
+			document.write(`вітаю -- ви просто неймовірні , ви з легкістю вгадали задане число. Молодець`)
+		else {
+			document.write(`Нажаль ви ніхєра не вгадали. Ну що ще сказвати - ДЕБІЛ`)
+		}
+
+	</script>
+</body>
+
+</html>
